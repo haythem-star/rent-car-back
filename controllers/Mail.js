@@ -20,7 +20,7 @@ exports.sendMail = (req,res,next) => {
     transporter.sendMail({
         to: 'haythembensalah26@gmail.com',
         from: 'rcar.community@gmail.com',
-        subject: 'mail from visitor',
+        subject: 'mail from Visitor',
         html: `
           <h2>From ${sender}, M/Ms ${username}</h2>
           <p>${content}</p>

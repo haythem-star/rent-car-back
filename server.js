@@ -36,7 +36,7 @@ const PORT = process.env.PORT;
 
 // create server
 app.listen(PORT, (err) =>
-  err ? console.error(err) : console.log(`server is running on PORT ${PORT}`)
+  err ? console.error(err) : console.log(`server is now running on PORT ${PORT}`)
 );
 
 
