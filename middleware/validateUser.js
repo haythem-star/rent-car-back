@@ -9,11 +9,9 @@ exports.registerValidate = () => [
   check("lastname", "lastname is required").notEmpty(),
   check("address", "address is required").notEmpty(),
 ];
-exports.mailValidate = () => [
-  check("email", "should be email").isEmail()
-];
+exports.mailValidate = () => [check("email", "should be email").isEmail()];
 exports.loginValidate = () => [
-  check("email", "should be email").isEmail(),
+  check("email", "should be an email").isEmail(),
   check("password", "enter a valid password").isLength({ min: 6 }),
 ];
 
